@@ -12,6 +12,11 @@ const usePetfinderAPI = () => {
   const clientId = import.meta.env.VITE_PETFINDER_CLIENT_ID;
   const clientSecret = import.meta.env.VITE_PETFINDER_CLIENT_SECRET;
 
+  console.log('Environment check:', {
+    clientId: clientId ? 'Present' : 'Missing',
+    clientSecret: clientSecret ? 'Present' : 'Missing'
+  });
+
   const getAccessToken = async () => {
     try {
       const response = await fetch(`${baseURL}/oauth2/token`, {
