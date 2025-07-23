@@ -1,4 +1,5 @@
 import '../styles/Header.css';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const headerData = {
@@ -20,11 +21,10 @@ const Header = () => {
             <p className="subtitle">{headerData.subtitle}</p>
           </div>
         </div>
-        
         <nav className="nav">
-          <a href="#" className="nav-link">Search</a>
-          <a href="#" className="nav-link">About</a>
-          <a href="#" className="nav-link">Contact</a>
+          <Link to="/" className="nav-link">Search</Link>
+          <Link to="/about" className="nav-link">About</Link>
+          <Link to="/contact" className="nav-link">Contact</Link>
         </nav>
       </div>
     </header>
