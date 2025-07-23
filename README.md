@@ -6,4 +6,4 @@ A dashboard application for browsing adoptable pets using the Petfinder API.
 
 ## 📽️ Walkthrough
 
-![Walkthrough GIF](public/PEtFinder-ezgif.com-video-to-gif-converter.gif)
+![FindMyPetFriend Demo](public/petfinder%20video%20part%202.gif)
